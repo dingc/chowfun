@@ -1,0 +1,45 @@
+<?php
+	session_start();
+	require_once('config.php');
+?>
+
+<html>
+<head>
+<title> Welcome to Chowfun </title>
+</head>
+<body>
+welcome to Chowfun for restaurant menu
+currently only invited users can use this
+click <a href="register-form.php">here to register</a> or <a href="login-form.php">login here</a> thanks!
+<br>
+Here are a list of available restaurants so far, more to come!
+<br> 
+
+<?php
+	echo "start";
+ //Connect to mysql server
+	$link = mysql_connect(DB_HOST, DB_USER, DB_PASSWORD);
+	if(!$link) {
+		die('Failed to connect to server: ' . mysql_error());
+	}
+	$db = mysql_select_db(DB_DATABASE);
+	if(!$db) {
+		die("Unable to select database");
+	}
+	echo "database connection success";
+	
+	$strQuery = "select $rid, $rname
+               from restaurant";
+    $rsrcResult = mysql_query($strQuery);
+   
+   while($arrayRow = mysql_fetch_assoc($rsrcResult)) {
+      $strA = $arrayRow["$rname"];
+      $strB = $arrayRow["$rid"];
+      echo "test";
+	  echo "<br />";
+	}
+	echo "end";
+?>
+
+</body>
+</html>
