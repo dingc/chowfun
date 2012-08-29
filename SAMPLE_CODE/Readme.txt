@@ -1,5 +1,6 @@
 Find and Tell
 	-template is designed for for the client, there was no discussion regarding which script is used
+	-this was first iteration without comments and elements are there to show the big picture
 	-The project ended on May 1st 
 	-css was based on Blueprint framework
 	
