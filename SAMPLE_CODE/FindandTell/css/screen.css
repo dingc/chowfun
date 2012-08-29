@@ -1,0 +1,157 @@
+/*---------------------------------------------
+main css grids, layout and font definition 
+created by Michael Ding 3/1/2012
+----------------------------------------------*/
+html {font-size:100.01%;}
+body {font-size:75%;color:#222;background:#2F2F2F;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
+h2 {font-size:2em;line-height:1;color:white;text-shadow:rgba(0,0,0,0.5) 0 1px;margin-top:30px;}
+/*footer*/
+.footer {font-size:0.75em;font-weight:normal;margin-bottom:24px;margin-top:24px;text-shadow:rgba(0,0,0,0.5) 0 1px;color: white;}
+.footer a:link {font-weight:normal;margin-bottom:24px;margin-top:24px;text-shadow:rgba(0,0,0,0.5) 0 1px;color: white;text-decoration:none;}
+.footer a:visited {font-weight:normal;margin-bottom:24px;margin-top:24px;text-shadow:rgba(0,0,0,0.5) 0 1px;color: white;text-decoration:none;}
+.footer a:active {text-decoration: none}
+.footer a:hover {text-decoration: underline;}
+
+/*top download button*/
+.button{
+	margin: 30px 0 0 30px;
+	background-color:#DBDADD;
+	max-width: 290px;
+	padding: 10px 15px;
+	text-transform:uppercase;
+	text-align:center;
+	-webkit-border-radius: 3px;
+	-moz-border-radius:3px;
+	border-radius: 3px;
+	-webkit-transition: background-color .5s;
+	-moz-transition: background-color .5s;
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;}
+.button:hover{
+	background-color:#4090CA;}
+.button a:link{font-weight:normal;color:black;text-shadow:rgba(0,0,0,0.5) 0 1px;text-decoration:none;}
+.button a:visited{font-weight:normal;color:black;text-shadow:rgba(0,0,0,0.5) 0 1px;text-decoration:none;}
+.button a:hover{
+	text-decoration:none;}
+/*top left logo holder*/
+.logo {
+	margin: 20px 0 20px 0;}
+/*image frame left*/
+.frame{
+	background-color: #DBDADD;
+	box-shadow: inset 0 0 30px;
+	padding: 10px;
+	max-width: 339px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,1) inset;
+	-moz-box-shadow: inset 0 0 30px;}
+/*right panel to hold info*/
+.panel{
+	display:block;
+	overflow:hidden;}
+.panel .panel-left, .panel .panel-mid, .panel .panel-right {height: 89px;float:left;}
+.panel .panel-left{
+	background: url('../img/sliced_02.png') 0 0 no-repeat;
+	width: 32px;
+	max-width: 32px;}
+.panel .panel-mid{
+	background: url('../img/sliced_03.png') 0 0 repeat-x;
+	width: 250px;
+	padding: 0px 50px 0 50px;
+	text-align: center;}
+.panel .panel-right{
+	background:url(../img/sliced_05.png) 0 0 no-repeat;
+	width:8px;}
+.panel .panel-content{
+	background:white;
+	width:360.5px;
+	height:400px;
+	margin:0 0 0 29px;
+	float:left;
+	border-top-right-radius:1px;
+	border-top-left-radius:1px;}
+.panel .panel-footer{
+	background:#4090CA;
+	width:360.5px;
+	height:10px;
+	margin:0 0 0 29px;
+	float:left;
+	border-bottom-right-radius:3px;
+	border-bottom-left-radius:3px;}
+/*things inside panel*/
+.profile{
+	margin:10px 0 5 0;
+	overflow: auto;}
+.profile .img{
+	width: 60px;
+	float: left;
+	margin-right:.5em;
+	margin-left:.8em;}
+.profile .name{
+	color: #4C4C4D;
+	font-size:2em;}
+.profile .info{
+	color:#B7B6B6;
+	font-size:1em;}
+.deal{
+	margin:5px 0 0 0;
+	overflow:auto;}
+.deal .price{
+	color:#83C441;
+	font-size:2em;
+	float:left;
+	margin-left:.5em;
+	margin-right:4em;}
+.deal .icon{
+	width:30px;}
+.deal .info{
+	color:#4C4C4D;
+	font-size:1.4em;
+	right:0px;}
+.ad{
+	max-width:360px;
+	margin-bottom: .5em;}
+.fav{
+	width:30px;}
+.fav-bar{
+	margin-left:.8em;}
+.comments{
+	margin:5px 0;
+	overflow: auto;}
+.comments .user-icon{
+	width: 40px;
+	float: left;
+	margin-right:.5em;
+	margin-left:.8em;}
+.comments .profile-name{
+	color: #4090CA;
+	font-size:1em;
+	font-weight: bold;
+	float:left;
+	margin-right:.3em;}
+.comments .comment{
+	color: #4C4C4D;
+	font-size:1em;}
+.comments .date{
+	color:#4C4C4D;
+	font-size:.8em;
+	right:0px;}
+
+/* grid.css */
+.container {width:950px;margin:0 auto;}
+.showgrid {background:url(src/grid.png);}
+.column, .span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-20, .span-21, .span-22, .span-23, .span-24 {float:left;margin-right:10px;}
+.last {margin-right:0;}
+.span-1 {width:30px;}
+.span-2 {width:70px;}
+.span-9 {width:350px;}
+.span-10 {width:390px;}
+.span-11 {width:430px;}
+.span-12 {width:470px;}
+.span-24 {width:950px;margin-right:0;text-align:center;}
+.prepend-1 {padding-left:40px;}
+.prepend-2 {padding-left:80px;}
+.prepend-3 {padding-left:120px;}

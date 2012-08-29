@@ -1,0 +1,96 @@
+
+/* front page ground image */
+.page{
+    top:0;
+	left:0;
+}
+
+.background{
+	min-height: 100%;
+	min-width: 1024px;
+	width:100%;
+	height:auto;
+	position:absolute;
+	top: 0;
+	left: 0;
+}
+
+.logo {
+	margin: 35px 0 0 25px;
+}
+
+/*render radius for the download button*/
+.download{
+	border-radius: 11px;
+}
+
+.top-left{
+	display:block;
+	position: absolute;
+	top:0;
+	left:0;
+	width:400px;
+	height: 250px;
+	overflow:hidden;
+}
+
+.middle-left
+{
+    position: absolute;
+    left: 0;
+    top: 350px;
+    margin-left: 35px;
+    max-width: 300px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+
+.bottom-right{
+	position: absolute;
+	bottom:0;
+	margin-left: 35px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+
+.demo-right{
+	position:absolute;
+	top: 100px;
+	right: 300px;
+}
+
+.tagline1
+{
+    font-family: "HelveticaNeue67MediumCondensed", "Helvetica Neue Condensed", "Helvetica", sans-serif;
+    font-size: 21px;
+    margin-bottom: 12px;
+    text-shadow: rgba(0,0,0,0.5) 0 1px;
+}
+
+.tagline2
+{
+    font-family: "HelveticaNeue47LightCondensed", "Helvetica Neue Condensed", "Helvetica", sans-serif;
+    font-size: 40px;
+    margin-bottom: 12px;
+    text-shadow: rgba(0,0,0,0.5) 0 1px;
+}
+
+.tagline3
+{
+    font-family: "HelveticaNeue57Condensed", "Helvetica Neue Condensed", "Helvetica", sans-serif;
+    font-size: 12px;
+    margin-top: 12px;
+    text-shadow: rgba(0,0,0,0.5) 0 1px;
+}
+
+.footer
+{
+	position: relative;
+    background-color: #F7F7F7;
+    text-align: center;
+	bottom: 0;
+	top: 150px;
+    padding: 0 0 48px 0;
+}
